@@ -1,9 +1,10 @@
-%Loading v1.0
+%Loading v1.1
 %Written by Matt Waldeck
 %Last updated on 05/06/2023
 %Just a simple loading "animation"
 
-loop
+%Loading...
+for i : 1 .. 5
     put "L"
     delay (50)
     cls
@@ -34,4 +35,19 @@ loop
     put "Loading..."
     delay (2000)
     cls
-end loop
+end for
+
+%Done!
+put "D"
+delay (50)
+cls
+put "Do"
+delay (50)
+cls
+put "Don"
+delay (50)
+cls
+put "Done"
+delay (50)
+cls
+put "Done!"
