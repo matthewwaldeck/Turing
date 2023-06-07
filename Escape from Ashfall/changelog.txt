@@ -1,0 +1,13 @@
+v0.1
+-Created basic game story.
+-Started working on first room.
+
+v0.2
+-Adding documentation and comments.
+-Finished broad strokes of room 1.
+-Added primitive inventory system.
+	-This will be replaced with an expandable array-based system in v0.3.
+	-At this point, purely a way to track if the user has the spring or not.
+-Added first random story object - the reason for your imprisonment.
+-Moved EfA files to their own folder.
+-Created changelog.
