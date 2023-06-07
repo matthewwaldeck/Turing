@@ -5,6 +5,7 @@ v0.1
 v0.2
 -Adding documentation and comments.
 -Finished broad strokes of room 1.
+-Started story of room 2.
 -Added primitive inventory system.
 	-This will be replaced with an expandable array-based system in v0.3.
 	-At this point, purely a way to track if the user has the spring or not.
