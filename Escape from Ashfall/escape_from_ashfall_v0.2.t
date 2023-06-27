@@ -1,6 +1,6 @@
 %Escape from Ashfall v0.2
-%Written by Matt Waldeck on 06/06/2023
-%Last Updated 07/06/2023
+%Written by Matt Waldeck on 2023-06-06
+%Last Updated 2023-06-07
 
 %This is a simple fantasy-themed, text-based adventure game.
 %Credit for themeing assistance goes to Justin Calleja.
@@ -8,6 +8,7 @@
 %Variables
 var playerName : string
 var reason : string
+var dead : boolean
 var infection : boolean
 var stuffs : int %Convert to array.
 var rng : int

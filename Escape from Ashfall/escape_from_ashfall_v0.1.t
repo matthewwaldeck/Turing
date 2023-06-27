@@ -1,6 +1,6 @@
 %Escape from Ashfall v0.1
-%Written by Matt Waldeck on 06/06/2023
-%Last Updated 06/06/2023
+%Written by Matt Waldeck on 2023-06-06
+%Last Updated 2023-06-06
 
 %This is a simple fantasy-themed, text-based adventure game.
 %Credit for themeing assistance goes to Justin Calleja.
