@@ -1,14 +1,27 @@
-v0.1
--Created basic game story.
--Started working on first room.
+v0.3 - 2023-06-28
+-Updated changelog format.
+-Switched inventory to simple array system.
+-Updated inventory checker to use new array system.
+-Cleaned up unused variables and unneeded comments.
+-Finally landed on a name for the region.
+-Added gold pieces as currency to bribe guards in future encounters.
+-Finished intro for Room 2.
+-Create basic actions for Room 2.
+	-'Hide' and 'Fight' options are mostly completed.
+	-'Run' option needs to be complteted still.
+-Moved death from flag to procedure - less recurring code, easier to keep track of.
 
-v0.2
+v0.2 - 2023-06-07
 -Adding documentation and comments.
--Finished broad strokes of room 1.
+-Finished basic actions of room 1.
 -Started story of room 2.
 -Added primitive inventory system.
-	-This will be replaced with an expandable array-based system in v0.3.
+	-This will be replaced with an array-based system in v0.3.
 	-At this point, purely a way to track if the user has the spring or not.
--Added first random story object - the reason for your imprisonment.
--Moved EfA files to their own folder.
--Created changelog.
+-Fleshed out story a little - reason for imprisonment is now random.
+-Moved EFA files to their own folder.
+-Created this changelog.
+
+v0.1 - 2023-06-06
+-Created basic story.
+-Started working on first room.
