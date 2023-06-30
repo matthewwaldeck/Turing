@@ -1,3 +1,13 @@
+v0.4 - 2023-06-30
+-Updated coinflip documentation.
+-Renamed rooms to better label what they are.
+	-Room 1 is now Prison Cell.
+	-Room 2 is now Hallway.
+-Added another option to Prison Cell.
+-Added tracker for current outfit and weapon.
+-Updated inventory check procedure.
+-Finished "Run" action for Hallway.
+
 v0.3 - 2023-06-28
 -Updated changelog format.
 -Switched inventory to simple array system.
