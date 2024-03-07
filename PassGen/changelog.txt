@@ -1,6 +1,3 @@
-v1.2 (2024-03-08)
--Switched from variable to dynamic array system to allow for infinite password length.
-
 v1.1 (2024-03-07)
 -Added prompt for user to specify desired length of password.
 -Added a catch for the length of the password to prevent buffer overflows.
