@@ -1,26 +1,32 @@
-%PassGen v1.0
+%PassGen v1.1
 %Author: Matt Waldeck
 %Written: 2024-03-06
-%Last update: 2024-03-06
+%Last update: 2024-03-07
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a very simple random password generator.       %
-% It will provide you with a 10 character password.      %
-% Future versions will ask how many characters you want. %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A very simple random password generator. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Variables
 var random : int
 var character : string
 var password : string
 var count : int
+var strength : int
 
 %Initialization
 password := ""
 count := 0
 
+%Ask how long they want the password to be.
+put "How many characters would you like your password to be?"
+put "A minimum of 10 characters is recommended, longer is safer."
+get strength
+cls
+put "Generating password..."
+
 loop
-    randint (random,1,72)
+    randint (random,1,71)
     case random of 
 	label 1: character := 'A'
 	label 2: character := 'B'
@@ -95,11 +101,16 @@ loop
 	label 71: character := ')'
     end case
     
+    %Add the new character to the password variable.
     password := password + character
     
+    %Keep track of how many times the rng has looped.
+    %Exit once it matches however many characters the user wanted.
     count := count + 1
-    exit when count = 10
+    exit when count = strength
 end loop
 
+%Display random password to the user.
+cls
 put "Your random password is:"
 put password
