@@ -1,0 +1,9 @@
+v1.1 (2024-03-07)
+-Added prompt for user to specify desired length of password.
+-Fixed case range issue.
+-Created changelog.
+
+v1.0 (2024-03-06)
+-First release.
+-Generates a 10 character password made up of random characters
+-These characters are A-Z,a-z,0-9 and some special characters.
