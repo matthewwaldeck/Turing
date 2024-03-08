@@ -1,26 +1,46 @@
-%PassGen v1.0
+%PassGen v1.1
 %Author: Matt Waldeck
 %Written: 2024-03-06
-%Last update: 2024-03-06
+%Last update: 2024-03-07
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a very simple random password generator.       %
-% It will provide you with a 10 character password.      %
-% Future versions will ask how many characters you want. %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A very simple random password generator. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Variables
 var random : int
 var character : string
 var password : string
 var count : int
+var strength : int
+var strength_check : boolean
 
 %Initialization
+strength_check := false
 password := ""
 count := 0
 
+%Ask how long they want the password to be.
 loop
-    randint (random,1,72)
+    put "How many characters would you like your password to be?"
+    put "A minimum of 10 characters is recommended. Maximum is 255."
+    get strength
+    
+    %This little block just ensures the value supplied is less than 255.
+    %This ensures it won't cause a buffer overflow.
+    if strength < 256 then
+	strength_check := true
+    end if
+    
+    %When the user passes their strength check, the program proceeds.
+    cls
+    exit when strength_check = true
+end loop
+
+put "Generating password..."
+
+loop
+    randint (random,1,90)
     case random of 
 	label 1: character := 'A'
 	label 2: character := 'B'
@@ -93,13 +113,37 @@ loop
 	label 69: character := '*'
 	label 70: character := '('
 	label 71: character := ')'
+	label 72: character := '-'
+	label 73: character := '_'
+	label 74: character := '='
+	label 75: character := '+'
+	label 76: character := '['
+	label 77: character := ']'
+	label 78: character := '{'
+	label 79: character := '}'
+	label 80: character := '<'
+	label 81: character := '>'
+	label 82: character := ','
+	label 83: character := '.'
+	label 84: character := '/'
+	label 85: character := '?'
+	label 86: character := '|'
+	label 87: character := ';'
+	label 88: character := ':'
+	label 89: character := '`'
+	label 90: character := '~'
     end case
     
+    %Add the new character to the password variable.
     password := password + character
     
+    %Keep track of how many times the rng has looped.
+    %Exit once it matches however many characters the user wanted.
     count := count + 1
-    exit when count = 10
+    exit when count = strength
 end loop
 
+%Display random password to the user.
+cls
 put "Your random password is:"
 put password
