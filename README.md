@@ -13,9 +13,4 @@ The original download can be found <a href="http://compsci.ca/holtsoft">here</a>
 ### Escape from Ashfall
 This is a text-based adventure game that I started making in 2023.<br>
 It's something I've wanted to try since I started learning to code, and I finally started it.<br>
-It will be under construction for a while.
-
-### PassGen
-A very simple password generator.<br>
-Simply an experiment that I decided to chase a little further.<br>
-A more feature-rich and legitimately useful version written in C# may come as a standalone project someday.
+It will be under construction for quite some time, I imagine.
