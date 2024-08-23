@@ -1,0 +1,31 @@
+v2.4 - 2024-08-23
+-Added rolling with advantage and disadvantage.
+-Bug fixes.
+
+v2.3 - 2024-08-22
+-Added statistics to multi-dice rolls.
+	-Sum
+	-Average
+	-Highest roll
+	-Lowest roll
+-Each roll is now numbered in program output.
+-Updated documentation.
+-Bug fixes
+
+v2.2 - 2024-08-19
+-Added support for rolling multiple dice.
+-Added more documentation.
+-Fixed variable naming.
+-Bug fixes.
+
+v2.1 - 2024-08-19
+-Grammar logic is now more efficient, at over 20 lines less code.
+-Added input validation on dice selection.
+
+v2.0 - 2024-08-19
+-Total rewrite, allowing user to choose from any standard D&D die type.
+	-This includes D4, D6, D8, D10, D12, D20, or D100.
+-Program will also display correct grammar on output.
+
+v1.0 - 2024-08-19
+-A simple random number generator that "rolls a D20".
